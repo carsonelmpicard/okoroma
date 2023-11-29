@@ -1,0 +1,29 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+h1{
+    text-align: center !important;
+    font-size: 50px;
+}
+
+.spacer{
+    height: 40px;
+}
+
+.pic1 {
+    display: block;
+    margin: 0 auto;
+    width: 80%; 
+    height: auto;
+}
