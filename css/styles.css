@@ -10,7 +10,6 @@ body {
     height: 95vh;
     width: 100vw;
     position: relative;
-    border-bottom: 1px solid lightsteelblue;
 }
 
 #masthead a {
@@ -19,8 +18,8 @@ body {
 }
 
 #masthead img {
-    margin: 4% 0 0 4%;
-    width: 300px;
+    margin: 40px 0 0 40px;
+    width: 250px;
 }
 
 #masthead a:hover {
@@ -36,13 +35,13 @@ body {
     z-index: 1;
 }
 
-#main-art {
+#main-art img {
     color: white;
-    height: 60%;
-    width: 70%;
-    background-color: darkslategray;
+    width: 60%;
+    max-width: 1000px;
+    min-width: 400px;
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: 50%;
     transform: translate(-50%, 0);
 }
