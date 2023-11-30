@@ -1,6 +1,87 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+#hed {
+    background-color: black;
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+#masthead a {
+    text-decoration: none;
+    color: white;
+}
+
+#masthead img {
+    margin: 4% 0 0 4%;
+    width: 300px;
+}
+
+#masthead a:hover {
+    color: slategray;
+}
+
+#headline {
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#main-art {
+    color: white;
+    height: 60%;
+    width: 70%;
+    background-color: darkslategray;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#left-gutter {
+    position: relative;
+}
+
+.bylines {
+    position: absolute;
+    top: 150px;
+    left: 25%;
+}
+
+.bylines b {
+    color: white;
+    font-size: 1.5em;
+    font-family: "paralucent-text", sans-serif;
+	font-weight: 700;
+    font-style: normal;
+}
+
+.bylines p {
+    color: white;
+    font-family: "paralucent-text", sans-serif;
+	font-weight: 400;
+    font-style: normal;
+}
+
+#body-content {
+    margin-top: 100px;
+    color: white;
+}
+
+.dropcap {
+    font-size: 3.5em;
+    font-family: "paralucent-text", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+    line-height: 0.8;
 }
 
 p {
@@ -9,12 +90,15 @@ p {
     line-height: 1.6;
     margin: 15px 0;
     text-align: justify;
-    text-indent: 50px;
 }
 
 h1{
     text-align: center !important;
     font-size: 50px;
+}
+
+h4 {
+    text-align: center;
 }
 
 .spacer{
@@ -26,4 +110,12 @@ h1{
     margin: 0 auto;
     width: 80%; 
     height: auto;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    border-bottom: 1px solid lightgrey;
 }
