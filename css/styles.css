@@ -2,6 +2,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: black;
+    overflow-x: hidden;
 }
 
 #hed {
@@ -62,18 +63,62 @@ body {
     font-family: "paralucent-text", sans-serif;
 	font-weight: 700;
     font-style: normal;
+    line-height: 2;
 }
 
-.bylines p {
+.bylines ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 10% 0;
+}
+
+.bylines li {
     color: white;
     font-family: "paralucent-text", sans-serif;
 	font-weight: 400;
     font-style: normal;
+    line-height: 1;
+    font-size: 20px;
+    margin-bottom: 10%;
 }
 
 #body-content {
+    max-width: 100vw;
     margin-top: 100px;
     color: white;
+}
+
+@media screen and (max-width: 576px) {
+    
+    #body-content {
+        margin: 400px 10% 0 10%;
+        padding-right: 12%;
+    }
+
+    .bylines b {
+        padding-left: 5%;
+    }
+    
+    .bylines ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0 0 5% 0;
+    }
+
+    .bylines li {
+        padding: 0 5% 0 5%;
+        margin: 0;
+    }
+
+    .bylines {
+        padding: 0;
+        left: 10%;
+        top: 10%;
+        max-width: 100vw;
+        
+    }
 }
 
 .dropcap {
