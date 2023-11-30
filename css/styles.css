@@ -31,9 +31,24 @@ body {
     position: absolute;
     bottom: 50%;
     left: 50%;
+    top: 30%;
+    width: max-content;
+
+    text-align: left !important;
+    margin: auto;
+    align-content: normal;
     min-height: 120px;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+#subhead {
+    color: #b1b1b1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 50%;
+    left: 50%;
+    top: 35%;
 }
 
 #main-art img {
