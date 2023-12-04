@@ -197,3 +197,11 @@ h4 {
     width: 80%;
     border-bottom: 1px solid lightgrey;
 }
+
+.Team{
+    max-width: 100%;
+}
+
+figcaption{
+    text-align: center;
+}
