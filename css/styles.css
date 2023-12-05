@@ -7,7 +7,7 @@ body {
 
 #hed {
     background-color: black;
-    height: 140vh;
+    height: 100vh;
     width: 100vw;
     position: relative;
 }
@@ -27,13 +27,19 @@ body {
 }
 
 #headline {
+    font-size: 3.5vmax;
+    font-family: "chandler-42-regular", sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 9px;
+    font-style: italic;
     color: white;
     position: absolute;
     left: 50%;
-    top: 36%;
+    top: 55%;
     width: max-content;
     max-width: 75%;
-    text-align: center !important;
+    text-align: justify !important;
     margin: auto;
     align-content: normal;
     min-height: 250px;
@@ -41,15 +47,26 @@ body {
     z-index: 1;
 }
 
+#article-top {
+    margin-top: 10vh;
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+}
+
 #subhead {
-    color: #b1b1b1;
+    color: white;
+    font-size: 2.8vmax;
+    font-family: "paralucent-text", sans-serif;
+	font-weight: 700;
+    font-style: normal;
     position: absolute;
-    transform: translate(-50%, -50%);
-    bottom: 50%;
+    transform: translate(-50%, -5%);
+    top: 5%;
     left: 50%;
-    top: 49%;
+    text-align: center;
     animation-name: fadein;
-    animation-duration: 2.5s;
+    animation-duration: 4s;
     animation-direction: linear;
 }
 
@@ -78,11 +95,12 @@ body {
     max-width: 1000px;
     min-width: 400px;
     position: absolute;
-    bottom: -5%;
+    bottom: -10%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 10%);
+    margin-top: 40px;
     animation-name: fadein;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-direction: linear;
 }
 
@@ -158,6 +176,28 @@ body {
         max-width: 100vw;
         
     }
+
+    #headline {
+        font-size: 3vmax;
+    }
+
+    #subhead {
+        width: 70%;
+        font-size: 3.5vmax;
+        transform: translate(-50%, -5%);
+        top: 5%;
+        left: 50%;
+    }
+
+    #main-art img {
+        width: 60%;
+        max-width: 1000px;
+        min-width: 400px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
 }
 
 .dropcap {
@@ -182,7 +222,10 @@ h1{
 }
 
 h4 {
-    text-align: center;
+    font-family: "paralucent-text", sans-serif;
+	font-weight: 700;
+    font-style: normal;
+    line-height: 3;
 }
 
 .spacer{
@@ -202,4 +245,12 @@ h4 {
     transform: translate(-50%, 0);
     width: 80%;
     border-bottom: 1px solid lightgrey;
+}
+
+.Team{
+    max-width: 100%;
+}
+
+figcaption{
+    text-align: center;
 }
