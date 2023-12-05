@@ -83,6 +83,12 @@ body {
     display: none;
 }
 
+.head-char {
+    animation-name: fadein;
+    animation-duration: .5;
+    animation-direction: linear;
+}
+
 #main-art img {
     color: white;
     width: 60%;
@@ -247,4 +253,26 @@ h4 {
 
 figcaption{
     text-align: center;
+}
+
+
+/* Audio stuff */
+
+.play-pause-btn {
+    width: 20px;
+    aspect-ratio: 1;
+}
+
+.audio-card {
+    background-color: white;
+    padding: 7px;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+}
+
+.audio-card span {
+    padding: 0 6px;
+    align-items: center;
+    line-height: 25px;
 }
