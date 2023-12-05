@@ -66,6 +66,12 @@ body {
     display: none;
 }
 
+.head-char {
+    animation-name: fadein;
+    animation-duration: .5;
+    animation-direction: linear;
+}
+
 #main-art img {
     color: white;
     width: 60%;

@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function updateText() {
         let textLengthToShow = Math.floor((scrollProgress / maxScroll) * text.length);
         displayText = text.substring(0, textLengthToShow);
-        headline.innerHTML = displayText;
+        headline.innerHTML = `<span class="head-char">${displayText}</span>`;
     }
 
     function updateScrollPosition() {
