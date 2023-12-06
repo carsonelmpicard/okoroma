@@ -97,5 +97,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     updateScrollPosition();
 });
-
-new AudioPlayer("voa-1", "voa-1-card");
