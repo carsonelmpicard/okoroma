@@ -43,11 +43,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let scrollProgress = 0;
     const maxScroll = 2000;
 
-    if (window.scrollY !== 0) {
+    var userHasStartedScroll = false;
+
+    var scrollCta = document.getElementById('scroll');
+
+    if (window.scrollY !== 0 || window.screen.width < 576) {
         headline.innerHTML = text;
     }
     else {
         window.addEventListener('wheel', (e) => {
+            if (!userHasStartedScroll) {
+                scrollCta.classList.add('disappearing-element');
+            }
+
+            if (scrollProgress > 100) {
+                userHasStartedScroll = true;
+            }
+
             if (scrollProgress < maxScroll && window.scrollY === 0) {
                 e.preventDefault();
             }

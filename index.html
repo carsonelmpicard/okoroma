@@ -16,7 +16,7 @@
 <div class="row">
 <div class="col-12" id="hed">
     <a href="https://www.dailytarheel.com" id="masthead"><img class="mediac" src="photos/white_masthead.png"></img></a>
-    <p class="scroll disappearing-element" id="scroll"><i>Scroll to begin</i></p>
+    <p class="scroll" id="scroll"><i>Scroll to begin</i></p>
     <h1 id="headline"></h1>
 </div>
 </div>
@@ -177,6 +177,28 @@
 
 <div class="spacer"></div>
 
+<div class="photo-cntainer">
+    <div class="image-slider">
+        <img src="photos/Charlie_Scott.jpg" class="slide" onclick="openModal(this)">
+        <img src="photos/Main_Art.png" class="slide" onclick="openModal(this)">
+        <img src="photos/New_Clip.jpeg" class="slide" onclick="openModal(this)">
+        <img src="photos/Okoroma Voice of America Image.jpeg" class="slide" onclick="openModal(this)">
+        <img src="photos/Team Photo.png" class="slide" onclick="openModal(this)">
+        <img src="photos/University of Rochester 50th Anniversary Photo.png" class="slide" onclick="openModal(this)">
+        <img src="photos/Yackety yack [1965] Team Photo Pg. 176.png" class="slide" onclick="openModal(this)">
+        <img src="photos/Yackety Yak [1964] Team Photo.png" class="slide" onclick="openModal(this)">
+        <img src="photos/Yackety Yak [1965] Senior Photo.png" class="slide" onclick="openModal(this)">
+    </div>
+</div>
+
+<!-- Modal for full-screen view -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
+
+<div class="spacer"></div>
+
 <a href="#" class="my-button">Back To Top</a>
 
 <div class="spacer"></div>
@@ -189,8 +211,9 @@
 <div class="col-12 col-sm-3"></div>
 </div>
 
-<script src="js/main.js"></script>
 <script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/imageSlider.js"></script>
 
 </body>
 </html>
