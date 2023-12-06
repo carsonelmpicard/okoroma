@@ -39,7 +39,7 @@ body {
     top: 55%;
     width: max-content;
     max-width: 75%;
-    text-align: justify !important;
+    text-align: left !important;
     margin: auto;
     align-content: normal;
     min-height: 250px;
@@ -57,17 +57,19 @@ body {
 #subhead {
     color: white;
     font-size: 2.8vmax;
-    font-family: "paralucent-text", sans-serif;
-	font-weight: 700;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
     font-style: normal;
     position: absolute;
     transform: translate(-50%, -5%);
-    top: 5%;
+    top: -8%;
     left: 50%;
     text-align: center;
     animation-name: fadein;
     animation-duration: 4s;
     animation-direction: linear;
+    margin-bottom: 30px;
+
 }
 
 @keyframes fadein {
@@ -117,8 +119,8 @@ body {
 .bylines b {
     color: white;
     font-size: 1.5em;
-    font-family: "paralucent-text", sans-serif;
-	font-weight: 700;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
     font-style: normal;
     line-height: 2;
 }
@@ -198,13 +200,27 @@ body {
         left: 50%;
         transform: translate(-50%, -10%);
     }
+
+    .mediac{
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    .line{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+   }
+
 }
 
 .dropcap {
     font-size: 3.5em;
-    font-family: "paralucent-text", sans-serif;
-	font-weight: 700;
-	font-style: normal;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     line-height: 0.8;
 }
 
@@ -222,10 +238,10 @@ h1{
 }
 
 h4 {
-    font-family: "paralucent-text", sans-serif;
-	font-weight: 700;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    line-height: 3;
+    font-size: 30px;
 }
 
 .spacer{
@@ -247,8 +263,20 @@ h4 {
     border-bottom: 1px solid lightgrey;
 }
 
-.Team{
-    max-width: 100%;
+.Team {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.AudioPic{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center bottom; /* Adjust the position as needed */
 }
 
 figcaption{
@@ -258,21 +286,113 @@ figcaption{
 
 /* Audio stuff */
 
+.audio-container {
+    display: block;
+    align-content: center;
+}
+
 .play-pause-btn {
+    margin-bottom: 25px;
     width: 20px;
     aspect-ratio: 1;
 }
 
 .audio-card {
-    background-color: white;
-    padding: 7px;
+    color: black;
     border-radius: 10px;
-    width: fit-content;
-    display: flex;
+    width: 100%;
+    padding: 5%;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin: 0 auto;
+    max-width: 90%;
 }
 
-.audio-card span {
-    padding: 0 6px;
-    align-items: center;
-    line-height: 25px;
+
+.scrubber {
+    width: 100%; /* Set the width to 100% or any other value you prefer */
+    background-color: white;
+}
+
+.photcap{
+    margin-top: 20px!important;
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.spacer{
+    height: 40px;
+}
+
+.scroll{
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 25px;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.disappearing-element {
+    animation: fadeOut 3s ease-out forwards; /* Add "forwards" here */
+}
+
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #000000;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.my-button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.Backback{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.Backback2{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.AudioHed{
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.AudioP{
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
 }
