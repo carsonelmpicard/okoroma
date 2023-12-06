@@ -69,7 +69,7 @@ body {
     animation-duration: 4s;
     animation-direction: linear;
     margin-bottom: 30px;
-
+    width: 60vw;
 }
 
 @keyframes fadein {
@@ -200,7 +200,7 @@ body {
     }
 
     #main-art img {
-        width: 60%;
+        width: 100vw;
         max-width: 1000px;
         min-width: 400px;
     }
