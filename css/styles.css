@@ -56,13 +56,13 @@ body {
 
 #subhead {
     color: white;
-    font-size: 2.8vmax;
+    font-size: 3vmax;
     font-family: "forma-djr-text", sans-serif;
     font-weight: 700;
     font-style: normal;
     position: absolute;
-    transform: translate(-50%, -5%);
-    top: -8%;
+    transform: translate(-50%, 12%);
+    top: -12%;
     left: 50%;
     text-align: center;
     animation-name: fadein;
@@ -91,19 +91,27 @@ body {
     animation-direction: linear;
 }
 
-#main-art img {
+#main-art {
     color: white;
-    width: 60%;
-    max-width: 1000px;
-    min-width: 400px;
     position: absolute;
-    bottom: -10%;
+    bottom: -5%;
     left: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 5%);
     margin-top: 40px;
     animation-name: fadein;
     animation-duration: 4s;
     animation-direction: linear;
+}
+
+#main-art img {
+    width: 60vw;
+    max-width: 1000px;
+    min-width: 400px;
+
+}
+
+#main-art figcaption {
+    font-size: 2vmin;
 }
 
 #left-gutter {
@@ -150,7 +158,7 @@ body {
 @media screen and (max-width: 576px) {
     
     #body-content {
-        margin: 400px 10% 0 10%;
+        margin: 70% 10% 0 10%;
         padding-right: 12%;
     }
 
@@ -195,6 +203,9 @@ body {
         width: 60%;
         max-width: 1000px;
         min-width: 400px;
+    }
+
+    #main-art{
         position: absolute;
         bottom: 10%;
         left: 50%;
@@ -207,12 +218,6 @@ body {
         max-width: 100% !important;
         margin-top: 20px !important;
     }
-
-    .line{
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-   }
 
 }
 
@@ -271,10 +276,11 @@ h4 {
 
 .AudioPic{
     display: block;
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
+    max-height: 300px;
     border-radius: 10px;
-    height: 350px;
+    height: auto;
     object-fit: cover;
     object-position: center bottom; /* Adjust the position as needed */
 }
@@ -360,16 +366,19 @@ figcaption{
     display: block;
     margin: 0 auto;
     width: 150px;
+    text-decoration: none;
 }
 
 .my-button:hover {
     background-color: #000000;
     color: white;
+    text-decoration: none;
 }
 
 .Backback{
     background-color: #ffffff;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: block;
     margin: 0 auto;
     max-width: 90%;
@@ -377,7 +386,8 @@ figcaption{
 
 .Backback2{
     background-color: #ffffff;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: block;
     margin: 0 auto;
     max-width: 90%;
