@@ -224,6 +224,10 @@ body {
         border-bottom: 1px solid black !important;
     }
 
+	.scroll {
+	color: black;
+	}
+
 }
 
 .dropcap {
